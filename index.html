@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Browsertabje en "Zet op beginscherm". Gegenereerd uit het app-icoon door
+       scripts/gen-site-favicons.cjs — niet met de hand vervangen. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <title>Privacybeleid — Klopt!</title>
+  <meta name="description" content="Privacybeleid van de pubquiz-app Klopt!" />
+  <!-- ⛔ De pagina staat ook op github.io (bron van de doorsturing); dit adres is het echte. -->
+  <link rel="canonical" href="https://klopt-app.nl/privacy/" />
+  <style>
+    /* ⛔ HET PALET VAN DE APP — src/styles/colors.ts, feature 082 ("Stamtafel").
+       Deze pagina is GEGENEREERD: pas hem hier aan, nooit in docs/export/.
+       De andere drie plekken met dezelfde waarden: site/index.html, site/kroeg/index.html
+       en site/bevestigd/index.html. */
+    :root {
+      --lamp: #F0C46A;        /* 11,48:1 op de grond */
+      --koper: #A87837;       /*  4,95:1 op de grond */
+      --ground: #17100B;
+      --ink: #F6E9D2;         /* 15,69:1 */
+      --ink-soft: #B39A76;    /*  6,99:1 */
+      --line: #3A2A1A;
+      --zebra: #241A10;
+      --display: "Fraunces", Georgia, "Times New Roman", serif;
+    }
+
+    /* ⛔ GEEN prefers-color-scheme meer: de app is sinds constitutie 7.0.0 alleen donker. */
+
+    /* ⭐ Dezelfde letter als de app, vanaf de site zelf — geen extern verzoek, dus deze
+       pagina blijft cookievrij. Dat is geen netheid maar een eis: dit adres staat bij Apple
+       én bij Google als privacybeleid opgegeven. */
+    @font-face {
+      font-family: "Fraunces";
+      src: url("/fonts/Fraunces-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-display: swap;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0 auto;
+      max-width: 42rem;
+      padding: 2.5rem 1.25rem 4rem;
+      background: var(--ground);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-text-size-adjust: 100%;
+    }
+    h1 { font-family: var(--display); font-size: 1.9rem; line-height: 1.15; margin: 0 0 .35rem; letter-spacing: -.02em; }
+    h2 { font-family: var(--display); font-size: 1.2rem; margin: 2.25rem 0 .6rem; color: var(--koper); }
+    p, ul { margin: 0 0 1rem; }
+    ul { padding-left: 1.25rem; }
+    li { margin-bottom: .35rem; }
+    .bijgewerkt { color: var(--ink-soft); font-size: .92rem; margin-bottom: 2rem; }
+    .tabel-scroll { overflow-x: auto; margin: 0 0 1.25rem; }
+    table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+    th, td { text-align: left; vertical-align: top; padding: .6rem .7rem; border-bottom: 1px solid var(--line); }
+    th { font-size: .78rem; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-soft); }
+    tbody tr:nth-child(even) { background: var(--zebra); }
+    a { color: var(--lamp); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacybeleid Klopt!</h1>
+    <p class="bijgewerkt">Laatst bijgewerkt: 2 november 2026</p>
+    <p>Dit privacybeleid legt uit welke persoonsgegevens de app <strong>Klopt!</strong> (“de app”, “wij”) verzamelt, waarom, en welke rechten u hebt. We houden het kort en zo concreet mogelijk.</p>
+    <h2>1. Wie is verantwoordelijke?</h2>
+    <p>De verwerkingsverantwoordelijke voor uw gegevens is:</p>
+    <ul>
+      <li><strong>Naam / handelsnaam:</strong> HD Haarlem Management BV</li>
+      <li><strong>E-mail:</strong> Info@klopt-app.nl</li>
+      <li><strong>Website:</strong> www.klopt-app.nl</li>
+      <li><strong>Plaats:</strong> Haarlem, Nederland</li>
+    </ul>
+    <p>Voor alle vragen over privacy of het uitoefenen van uw rechten kunt u ons mailen op het bovenstaande adres.</p>
+    <h2>2. Welke gegevens verzamelen we?</h2>
+    <p>Klopt! is een sociale pubquiz-app. We verzamelen alleen wat nodig is om de app te laten werken:</p>
+    <div class="tabel-scroll">
+      <table>
+        <thead><tr><th>Gegeven</th><th>Waarvoor</th><th>Verplicht?</th></tr></thead>
+        <tbody>
+          <tr><td>E-mailadres</td><td>Account aanmaken, inloggen, accountherstel — en hooguit twee herinneringen als u na het aanmaken van uw account nog niet speelde</td><td>Ja</td></tr>
+          <tr><td>Wachtwoord</td><td>Inloggen (versleuteld opgeslagen door onze authenticatie-provider; wij zien het niet)</td><td>Ja</td></tr>
+          <tr><td>Spelersnaam (display name)</td><td>U tonen op de ranglijst en in uw kroeg (vriendengroep)</td><td>Optioneel</td></tr>
+          <tr><td>Push-token</td><td>Meldingen naar uw toestel sturen (alleen als u meldingen aanzet)</td><td>Optioneel</td></tr>
+          <tr><td>Quiz-antwoorden</td><td>Uw antwoorden nakijken en scoren</td><td>Ja, tijdens spelen</td></tr>
+          <tr><td>Scores en speelvoortgang</td><td>Tussenstand, eindstand, de ranglijst van uw kroeg en het klassement van alle spelers</td><td>Ja, tijdens spelen</td></tr>
+          <tr><td>App-voorkeuren</td><td>Onthouden of u de uitleg hebt gezien, hoe ver u erin kwam, of u eerst een proefronde wilde of direct wilde spelen, en of meldingen aanstaan</td><td>Ja</td></tr>
+          <tr><td>Kroeg-lidmaatschap</td><td>U koppelen aan uw vriendengroep(en)</td><td>Ja</td></tr>
+          <tr><td>Groepschat-link van uw kroeg</td><td>Alleen door de kastelein in te vullen: één uitnodigingslink naar een WhatsApp- of Signal-groep, zichtbaar voor de leden van díe kroeg</td><td>Optioneel</td></tr>
+          <tr><td>Wanneer u de app opent</td><td>Het tijdstip waarop u de app opent en hoe lang hij open blijft, zodat we zien op welke momenten van de dag de app gebruikt wordt en de app daarop kunnen afstemmen</td><td>Ja</td></tr>
+          <tr><td>Foutmeldingen van de app</td><td>Loopt de app vast of lukt het tonen van een scherm niet, dan stuurt de app een technisch foutbericht: wat er misging, op welk scherm, wanneer, de versie van de app en van het besturingssysteem van uw toestel, en — als u bent ingelogd — bij welk account het hoort. Zo kunnen we fouten vinden en herstellen. Wat u typt of antwoordt zit er nooit in</td><td>Ja</td></tr>
+          <tr><td>Teamlidmaatschap en wat u in een team doet</td><td>Speelt u in een team, dan bewaren we van welk team u lid bent (en was), voor welke quiz u zich aanmeldde, welke categorie u op zich nam, welk antwoord u leverde en welke inzet u koos</td><td>Optioneel</td></tr>
+          <tr><td>Berichten in de teamchat</td><td>Schrijft u in de chat van uw team, dan bewaren we de tekst, wie hem schreef en wanneer, zodat uw teamgenoten hem kunnen lezen</td><td>Optioneel</td></tr>
+          <tr><td>Wat u meldt</td><td>Meldt u een spelersnaam, een teamnaam, een bericht van een kastelein, een antwoord of een nakijkfout, dan bewaren we wat u meldde, uw toelichting en een momentopname van wat er op dat moment stond — zodat wij het kunnen beoordelen ook als het intussen is gewijzigd</td><td>Optioneel</td></tr>
+          <tr><td>Bericht bij het uit een kroeg zetten</td><td>Alleen door de kastelein in te vullen: een korte toelichting die wij bewaren en uitsluitend aan de betreffende speler tonen, tot die weer lid van de kroeg wordt</td><td>Optioneel</td></tr>
+          <tr><td>Hoe u bij Klopt! kwam</td><td>Via welk kanaal u de app vond (bijvoorbeeld een bericht op Instagram, een uitnodiging voor een kroeg of team, of de winkel), en hoe we dat hebben vastgesteld, zodat we zien welke kanalen spelers opleveren die blijven spelen</td><td>Ja</td></tr>
+          <tr><td>Uw antwoord op *“Hoe kwam u bij Klopt!?”*</td><td>Hetzelfde; alleen als u de vraag beantwoordt</td><td>Nee</td></tr>
+          <tr><td>Uw groep per quiz en de momentopname na uw eerste quiz</td><td>Tellen of Klopt! groeit (zie *Hoe we bijhouden of Klopt! groeit*)</td><td>Ja</td></tr>
+          <tr><td>Uw keuze om genoemd te worden, uw Instagram-naam en uw tikken op *Volg ons*</td><td>Klopt! op Instagram en Facebook (zie het kopje daarover)</td><td>Nee</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>We verzamelen <strong>geen</strong> locatiegegevens, contacten, advertentie-identifiers, en we doen <strong>geen</strong> tracking voor advertenties. We delen accounts wel in groepen in om totalen te tellen (zie *Hoe we bijhouden of Klopt! groeit*) en om u een herinnering te sturen als u een tijd niet speelde (zie *Herinneringen per e-mail*); verder nemen we daarmee geen besluit over u als persoon.</p>
+    <h2>Wat medespelers van u zien</h2>
+    <p>Andere spelers zien uw spelersnaam, uw punten, hoe vaak u de eerlijkheidsbonus hebt gehaald en <strong>welke rondes van de lopende quiz u hebt ingevuld</strong>. Binnen uw kroeg zijn dat uw medeleden; in het klassement, dat over <strong>alle spelers van de app</strong> loopt, is dat iedereen — ook spelers met wie u geen kroeg deelt.</p>
+    <p>Wat zij <strong>niet</strong> zien: uw antwoorden, uw e-mailadres, uw score per losse ronde en wanneer u speelde. Van een ronde die u hebt ingevuld is alleen zichtbaar <strong>dát</strong> u hem hebt ingevuld. Een ronde die u opende maar leeg liet aflopen, telt daarbij niet als ingevuld.</p>
+    <h2>Als u in een team speelt</h2>
+    <p>Speelt u in een team, dan delen uw teamgenoten meer met elkaar dan gewone medespelers. <strong>Zij zien van u: uw naam, uw antwoord op elke vraag, welke inzet u eraan gaf, welke categorie u op zich nam en of u een ronde al hebt ingezonden.</strong> Andersom ziet u dat ook van hen. Dat is de aard van samen spelen: het team levert één antwoord per vraag, en dan moet zichtbaar zijn van wie het kwam.</p>
+    <p>Buiten uw team is zichtbaar: de <strong>naam van uw team</strong>, de stand van het team in het klassement, en <strong>wie er in een team zit</strong> — die ledenlijst kan elke ingelogde speler opvragen. Uw antwoorden en uw inzet blijven binnen het team. Krijgt u een uitnodigingslink of stuurt u er een door, houd er dan rekening mee dat <strong>iedereen die de link heeft de teamnaam en de namen van alle leden ziet</strong>, ook zonder lid te worden.</p>
+    <p>In die ledenlijst staat ook de <strong>Klopt!-rating van elk lid</strong>. Dat getal was al zichtbaar voor iedereen op het klassement van alle spelers; nieuw is dat het nu meteen naast de namen van een team staat. Heeft u nog geen rating — omdat u nog geen ronde op tijd afmaakte — dan staat er een streepje.</p>
+    <p>Wordt u voor een team uitgenodigd, dan zien <strong>alle leden van dat team uw naam</strong> staan zolang de uitnodiging openstaat — ook leden met wie u geen kroeg deelt. Neemt u de uitnodiging aan of weigert u hem, of trekt de captain hem in, dan verdwijnt die vermelding.</p>
+    <p>Verlaat u een team, dan blijft vastgelegd <strong>dát u er lid van was en tot wanneer</strong>, en blijven de uitslagen van de rondes die u meespeelde staan — anders zou de uitslag van uw teamgenoten achteraf veranderen. Wordt het team opgeheven, dan blijft de teamnaam in de vastgelegde eindstanden staan.</p>
+    <h2>De teamchat</h2>
+    <p>Heeft uw team een chat, dan bewaren we wat u daar schrijft, met uw naam en het tijdstip. <strong>Alleen de huidige leden van uw team kunnen die berichten lezen</strong> — niet uw kroeggenoten, niet andere teams, niemand anders in de app. Verwijdert u een eigen bericht, dan verdwijnt het voor uw team meteen uit beeld; de tekst zelf wissen we <strong>zeven dagen</strong> later, zodat een bericht dat net verwijderd is nog gemeld kan worden.</p>
+    <p><strong>Verlaat u het team, dan blijven uw berichten daar staan en blijven ze voor de achterblijvers leesbaar, met uw naam erbij.</strong> Zelf ziet u ze niet meer. Wilt u dat niet, verwijder uw berichten dan vóór u vertrekt.</p>
+    <p>U kunt een teamgenoot <strong>blokkeren</strong>: u ziet zijn berichten dan niet meer. Dat geldt alleen voor u — hij merkt er niets van en anderen zien hem gewoon. Meldt u een bericht, dan verdwijnt het voor het team tot wij ernaar hebben gekeken; wat er dan gebeurt staat hieronder.</p>
+    <h2>Als u iets meldt</h2>
+    <p>U kunt in de app melden wat er volgens u niet in orde is: een spelersnaam, een teamnaam, een bericht van een kastelein, een antwoord van een teamgenoot, of een antwoord dat volgens u verkeerd is nagekeken. We leggen dan vast <strong>wat u meldde, uw toelichting en hoe het er op dat moment uitzag</strong>. Die momentopname is nodig omdat de tekst intussen kan veranderen — anders zouden we iets beoordelen wat er niet meer staat.</p>
+    <p>Een melding wordt <strong>automatisch beoordeeld</strong>. Daarvoor gaat de gemelde tekst — dus niet uw naam of uw e-mailadres — naar onze AI-dienst (§4). Wat duidelijk in orde is wordt gesloten, wat duidelijk niet in orde is wordt verborgen, en alles daartussen leggen we aan een mens voor. Elk automatisch besluit is <strong>omkeerbaar</strong> en wordt dagelijks door ons nagelezen.</p>
+    <p><strong>Degene over wie u meldt, hoort nooit wie de melding deed.</strong> U ziet later wel de uitkomst van uw eigen melding, maar niet wat er met de ander is gebeurd. Meldt iemand opvallend veel, dan bekijken wij die meldingen zelf in plaats van ze automatisch af te handelen.</p>
+    <p>Wordt een naam of een bericht verborgen, dan bewaren we de oorspronkelijke tekst, zodat wij het kunnen terugzetten als het besluit achteraf onjuist blijkt. Een verborgen spelersnaam of teamnaam betekent dat er een nieuwe gekozen moet worden; tot dat moment ziet iedereen u als “Speler”.</p>
+    <h2>Eerlijkheidsmodus (Honesty Mode)</h2>
+    <p>Tijdens een ronde detecteert de app of u de app verlaat (naar de achtergrond schakelt), om uw eerlijkheidsbonus te bepalen. Deze detectie gebeurt <strong>lokaal op uw toestel</strong>; we slaan alleen het resultaat (wel/geen bonus) op als onderdeel van uw score. We registreren niet welke andere apps u gebruikt.</p>
+    <h2>Groepschat bij uw kroeg</h2>
+    <p>De kastelein van een kroeg kan er één uitnodigingslink bij zetten naar een groepsgesprek in <strong>WhatsApp</strong> of <strong>Signal</strong>. We bewaren die link precies zoals hij is ingevoerd en tonen hem aan de leden van díe kroeg — verder aan niemand. Bij Signal zit de informatie over de groep in de link zelf verwerkt; ook dat deel bewaren we ongewijzigd, we lezen het niet uit en sturen het nergens heen.</p>
+    <p>Klopt! maakt de groep <strong>niet</strong> aan, doet niet mee aan het gesprek en neemt zelf <strong>geen contact op met WhatsApp of Signal</strong>. We weten dus niet wie er in de groep zit, wat er gezegd wordt, of u de link geopend hebt, en zelfs niet of de groep nog bestaat. Tikt u op de link, dan verlaat u Klopt! en opent u de app van WhatsApp of Signal; vanaf dat moment geldt het privacybeleid van die partij.</p>
+    <p>Houd er rekening mee dat zo’n uitnodigingslink een <strong>sleutel tot de groep</strong> is: iedereen die hem heeft, kan meedoen. Zet hem daarom alleen bij een kroeg die u vertrouwt. De kastelein kan de link op elk moment vervangen of weghalen. Weghalen in Klopt! heft de groep zelf niet op — dat doet u in WhatsApp of Signal.</p>
+    <h2>Bericht bij het uit een kroeg zetten</h2>
+    <p>Zet de kastelein van een kroeg u eruit, dan kan hij daar een kort bericht bij schrijven — bijvoorbeeld waaróm. Dat bericht bewaren we en tonen we <strong>alleen aan u</strong>: het staat op de Kroeg-pagina en gaat mee in de melding die u erover krijgt. Andere spelers zien het niet.</p>
+    <p>We bewaren het bericht zolang de wering geldt. Laat de kastelein u weer toe en komt u opnieuw in de kroeg, dan <strong>verdwijnt het bericht</strong> en is het nergens meer op te vragen. Verwijdert u uw account, dan verdwijnt het eveneens.</p>
+    <p>Zo’n bericht is tekst van een andere gebruiker. We toetsen het vóór verzending aan dezelfde woordenlijst als spelersnamen, en onder het bericht staat een knop waarmee u het bij ons kunt <strong>melden</strong>. Wij lezen zo’n melding en nemen contact met u op; het herstellen van uw lidmaatschap kan alleen de kastelein zelf.</p>
+    <h2>Wanneer u de app opent</h2>
+    <p>De app legt vast <strong>wanneer</strong> u hem opent en <strong>hoe lang</strong> hij open blijft — ook als u die keer niets speelt. Per keer bewaren we één regel: het tijdstip, hoe lang de app open bleef, uw tijdzone, of het een iPhone of een Android-toestel is, en welke versie van de app u gebruikt.</p>
+    <p>Waarvoor: we willen weten op welke <strong>momenten van de dag</strong> de app gebruikt wordt. Daar stemmen we af wanneer een nieuwe ronde opengaat en wanneer we u een melding sturen. Zonder dit zien we alleen wanneer er gespeeld is, en dat is niet hetzelfde: u kunt alleen spelen als er een ronde openstaat, en dat tijdstip kiezen wij.</p>
+    <p>Wat we hierbij <strong>niet</strong> vastleggen: welk scherm u bekeek, wat u aantikte, wat u typte, waar u was, of welk toestel u precies hebt. Deze gegevens gaan <strong>niet naar een andere partij</strong> — ze blijven in onze eigen database, en we gebruiken ze niet om u te volgen; we tellen ze alleen op. Hoe lang we ze bewaren staat in §5.</p>
+    <h2>Herinneringen per e-mail</h2>
+    <p>Hebt u een account gemaakt maar nog geen ronde gespeeld, dan sturen we u <strong>hooguit twee</strong> e-mails: één de dag na het aanmaken van uw account en één een week later — de tweede alleen als u dan nog steeds niet speelde.</p>
+    <p>Speelde u eerder mee en hebt u een hele Quiz overgeslagen, dan sturen we u bij het begin van de volgende Quizzen <strong>hooguit twee</strong> e-mails, één per Quiz. Ontvangt u meldingen van de app, dan zegt de melding van de eerste Quiz het u en krijgt u hooguit één e-mail. Speelt u weer, dan stoppen de herinneringen meteen. Valt u later opnieuw een hele Quiz stil, dan kan dat weer zo gaan.</p>
+    <p>Elke mail heeft een afmeldlink; na één tik krijgt u geen enkele herinnering per e-mail meer. Uw account, uw meldingen in de app en de mails voor inloggen en wachtwoordherstel blijven daarbij gewoon zoals ze zijn.</p>
+    <p>Om de uitleg bij het begin te verbeteren, onthouden we ook <strong>hoe ver u in die uitleg kwam</strong> en of u eerst een proefronde wilde of direct wilde spelen. Dat is één stand per account, geen overzicht van wat u aantikte. Verwijdert u uw account, dan verdwijnen deze gegevens en het overzicht van de herinneringen die we u stuurden direct mee.</p>
+    <h2>Hoe u bij Klopt! kwam</h2>
+    <p>We willen weten welke berichten en uitnodigingen nieuwe spelers opleveren die blijven spelen. Daarvoor leggen we bij uw account één <strong>herkomst</strong> vast: het kanaal (bijvoorbeeld Instagram, LinkedIn, een kroeg- of teamuitnodiging), de code van het bericht als die er is, en <strong>hoe</strong> we dat hebben vastgesteld:</p>
+    <ul>
+      <li><strong>via een uitnodiging</strong> — u werd in de eerste zeven dagen lid van een kroeg of team via een uitnodiging. We leggen vast welke kroeg of welk team dat was, en bij een team ook wie u uitnodigde;</li>
+      <li><strong>via Google Play</strong> (alleen Android) — Google Play geeft bij de installatie door via welke link van ons u de app installeerde. De app stuurt alleen de code van die link door, en alleen bij uw eerste start;</li>
+      <li><strong>geschat op tijdstip</strong> — iemand klikte kort vóór het aanmaken van uw account op een link van ons, op hetzelfde soort toestel. Dat is een <strong>schatting</strong>, en zo staat hij ook bij ons opgeslagen;</li>
+      <li><strong>onbekend</strong>.</li>
+    </ul>
+    <p>Weten we het niet zeker, dan vragen we in de uitleg één keer *“Hoe kwam u bij Klopt!?”*. Uw antwoord bewaren we apart; u hoeft het niet te geven.</p>
+    <p>Bij uw eerste start stuurt de app daarvoor één keer mee of u een iPhone of een Android-toestel gebruikt.</p>
+    <p>Wat we hierbij <strong>niet</strong> gebruiken: uw IP-adres, cookies, een toestel- of advertentie-identifier, het klembord of een andere manier om uw toestel te herkennen. Voor de herkomst halen we geen gegevens op bij Instagram, Facebook, LinkedIn of anderen, en we gebruiken dit niet om u advertenties te tonen. Beslissingen nemen we op totalen per kanaal, nooit over u als persoon.</p>
+    <h2>Als u op een link van Klopt! klikt</h2>
+    <p>Klikt u op een link van ons die begint met klopt-app.nl/s/, of opent u op onze website een uitnodiging voor een kroeg of team, dan tellen we die klik: de code van de link, het tijdstip, en of het een iPhone, een Android-toestel of een computer was. We bewaren <strong>niet</strong> uw IP-adres, uw browser of een cookie, en de website zet geen cookies. Onze hostingpartijen (Netlify en Supabase) zien bij elk verzoek kort uw IP-adres in hun technische logboeken, zoals bij elke website; wij slaan het niet op.</p>
+    <h2>Als u reageert op Klopt! op Instagram of Facebook</h2>
+    <p>Reageert u onder een bericht van Klopt! op Instagram (@kloptapp) of Facebook (Klopt Pubquiz), dan halen we die reactie op om erop te kunnen antwoorden. We bewaren alleen de tekst, het moment, onder welk bericht hij staat, en op Instagram uw gebruikersnaam (Facebook geeft die niet door). Geen profiel, geen foto, geen volgers.</p>
+    <p>Een antwoord schrijven we zelf; er gaat nooit iets vanzelf uit. Soms laten we ons helpen door Claude van Anthropic: dan gaat de tekst van uw reactie en van ons bericht erheen, maar niet uw gebruikersnaam.</p>
+    <p>We bewaren een reactie 90 dagen. Verwijdert u hem eerder, dan wissen we hem bij ons zodra we dat zien. Wilt u dat we een reactie eerder weghalen, mail dan naar het adres onder *Contact*.</p>
+    <h2>Openbare berichten over pubquizzen op Instagram</h2>
+    <p>Om kroegen en quizspelers te leren kennen, kijken we elke ochtend naar de recente openbare Instagram-berichten van zakelijke accounts en creator-accounts (zoals kroegen, quizbureaus en quizmasters) die we zelf hebben uitgekozen, en — zodra Meta dat toestaat — naar openbare berichten met hashtags zoals #pubquiz. Alleen een bericht over een pubquiz kunnen we kiezen. Van een bericht dat we kiezen bewaren we de link, de tekst eronder, het moment, het aantal reacties en de naam van het account (bij een bericht via een hashtag geeft Instagram geen naam door). Geen reacties van anderen, geen profielen, geen volgers, geen foto's.</p>
+    <p>Noemt een van die berichten een ander account — ook als het bericht zelf niet over een pubquiz gaat —, dan kijken we één keer of dat een zakelijk of creator-account is dat over pubquizzen gaat. Is dat zo, dan stellen we het onszelf voor als account om te volgen; we bewaren dan alleen de naam, welk account het noemde en of de beschrijving of een bericht over pubquizzen ging. Is het niet zo, of is het een privé-account, dan bewaren we niets. We voegen nooit vanzelf een account toe.</p>
+    <p>Een reactie schrijven we zelf en plaatsen we met de hand; er gaat nooit iets vanzelf uit en we liken of volgen niet automatisch. Soms laten we ons helpen door Claude van Anthropic: dan gaan de tekst van het bericht en de naam van het account erheen.</p>
+    <p>We bewaren zo'n bericht 30 dagen, en een voorstel dat we niet oppakken ook 30 dagen. Een account dat we bewust overslaan, onthouden we een jaar, zodat we het niet opnieuw voorstellen. Daarna houden we alleen bij hoeveel berichten we per dag bekeken en op hoeveel we reageerden. Staat uw account in onze lijst en wilt u dat niet, mail dan naar het adres onder *Contact*; dan halen we het weg.</p>
+    <h2>Hoe we bijhouden of Klopt! groeit</h2>
+    <p>We willen weten of nieuwe spelers blijven spelen, en wat daarbij helpt. Daarvoor rekenen we uit wat we al van u hebben — vooral <strong>in welke quizzen u hoeveel rondes inzond</strong> — en delen we uw account per quiz in een groep in: bijvoorbeeld *gespeeld*, *vaste speler* of *een quiz overgeslagen*. We bewaren daarnaast één keer, aan het eind van uw eerste quiz, een momentopname van een paar vinkjes: of uw meldingen aanstonden, of u in een kroeg of team zat, of u iemand uitnodigde, of u de uitleg afmaakte, of u op een volgknop voor Instagram of Facebook tikte, en of u de vraag *“Hoe kwam u bij Klopt!?”* beantwoordde.</p>
+    <p>We houden ook bij <strong>welke herinneringen en kaartjes we u lieten zien</strong> — de meldingen en e-mails die we u stuurden stonden al in ons logboek; nieuw is dat we vastleggen wanneer de app u het kaartje *Volg ons* aanbood, en met welke aanleiding (bijvoorbeeld een nieuwe stemming in *Denk mee*).</p>
+    <p>Waarvoor: om <strong>totalen</strong> te tellen, zoals *“van de nieuwe spelers via LinkedIn werd een kwart vaste speler”*, en om te zien of u een tijd niet speelde — dan krijgt u de herinneringen hierboven (§2), en een melding in de app kan dan een andere zin hebben. Verder nemen we hiermee <strong>geen besluit over u als persoon</strong>, en niemand ziet een lijst met namen. Deze gegevens gaan niet naar een andere partij.</p>
+    <p>Verwijdert u uw account, dan verdwijnt dit direct mee. Wat overblijft is alleen een <strong>telling</strong> per week — hoeveel accounts er verwijderd werden, en of dat vaste spelers waren — zonder enige verwijzing naar u.</p>
+    <h2>Klopt! op Instagram en Facebook</h2>
+    <p>Soms noemen we de beste spelers, kroegen en teams in een bericht op Instagram (@kloptapp) en Facebook (Klopt Pubquiz). Van een speler noemen we dan alleen de <strong>spelersnaam, de plek en de punten</strong> — nooit iets anders. Dat doen we pas nadat de app u daar één keer over heeft verteld, en nooit als u *Noem mij in Klopt!-posts* in Instellingen uitzet. Een kroeg noemen we alleen als de kastelein dat niet heeft uitgezet, een team alleen als de captain dat niet heeft uitgezet — en van een team alleen de teamnaam, nooit de namen van de leden.</p>
+    <p>Vult u in Instellingen uw Instagram-naam in, dan taggen we u in zo'n bericht. Dat is uw eigen keuze; maakt u het veld leeg, dan taggen we u niet meer.</p>
+    <p>Zo'n bericht is openbaar. Voor wat er op Instagram en Facebook zelf mee gebeurt, is Meta verantwoordelijk. Wilt u dat een geplaatst bericht met uw naam verdwijnt, mail dan naar het adres onder *Contact*; dan halen we het weg.</p>
+    <p>In de app tellen we ook als u op een knop tikt om Klopt! te volgen: waar in de app, naar welk platform, en of het een iPhone of een Android-toestel was. Of u daarna echt volgt, zien wij niet. Klikt u het kaartje *Volg ons* weg, dan onthouden we dat, zodat het in dezelfde quiz niet terugkomt. Later in een andere quiz kan de app het nog eens laten zien, bij een nieuwe aanleiding: een stemming in *Denk mee*, een nieuw verhaal achter een vraag, of een stand waarin u met uw naam staat. Na vier keer wegklikken vragen we het niet meer. Tikt u één keer op een volgknop, dan ook niet.</p>
+    <h2>3. Waarom verwerken we deze gegevens (rechtsgronden)?</h2>
+    <ul>
+      <li><strong>Uitvoering van de overeenkomst</strong> (art. 6 lid 1 sub b AVG): om u een account te geven en de quizfunctionaliteit te leveren.</li>
+      <li><strong>Toestemming</strong> (art. 6 lid 1 sub a AVG): voor het sturen van push-meldingen. U kunt deze toestemming op elk moment intrekken via de instellingen in de app of via uw toestelinstellingen. En voor het taggen van uw Instagram-naam, als u die zelf invult; maakt u het veld leeg, dan stopt het.</li>
+      <li><strong>Gerechtvaardigd belang</strong> (art. 6 lid 1 sub f AVG): voor de beveiliging en goede werking van de app, en om u — zolang u na het aanmaken van uw account nog niet speelde — hooguit twee keer per e-mail aan uw account te herinneren, en om u — als u een hele Quiz oversloeg — hooguit twee keer per e-mail aan een nieuwe Quiz te herinneren — daar kunt u zich met één tik voor afmelden — en om te kunnen antwoorden op reacties onder onze berichten op Instagram en Facebook, om openbare berichten over pubquizzen en van de accounts die we volgen te lezen en er met de hand op te reageren, om bij te houden of nieuwe spelers blijven spelen en wat daarbij helpt — alleen als totalen —, en om de beste spelers, kroegen en teams te noemen in onze berichten op Instagram en Facebook — dat kunt u in de app uitzetten.</li>
+    </ul>
+    <h2>4. Met wie delen we gegevens (verwerkers)?</h2>
+    <p>We verkopen uw gegevens nooit. We schakelen wel een aantal betrouwbare dienstverleners in die namens ons gegevens verwerken:</p>
+    <ul>
+      <li><strong>Supabase</strong> — database, accountbeheer en hosting van uw gegevens.</li>
+      <li><strong>Netlify</strong> (Verenigde Staten) — host onze website en stuurt links van klopt-app.nl/s/ door naar de App Store of Google Play. Netlify ziet daarbij uw IP-adres in zijn technische logboeken en bewaart die korte tijd, volgens zijn eigen voorwaarden.</li>
+      <li><strong>GitHub</strong> (Verenigde Staten) — bewaart de tekst van dit privacybeleid. Opent u die op klopt-app.nl/privacy/, dan haalt Netlify hem daar voor u op; GitHub kan daarbij uw IP-adres zien in zijn technische logboeken.</li>
+      <li><strong>Expo</strong> — bezorging van push-meldingen en app-updates.</li>
+      <li><strong>Apple Push Notification service (APNs)</strong> — aflevering van meldingen op iOS-toestellen.</li>
+      <li><strong>Resend</strong> — verzending van e-mail namens Klopt!, zoals de code waarmee u uw e-mailadres bevestigt bij het aanmaken van een account en de code waarmee u een vergeten wachtwoord opnieuw instelt, en de hooguit twee herinneringen als u na het aanmaken van uw account nog niet speelde. Hiervoor gaan uw e-mailadres, uw spelersnaam (voor de aanhef) en de inhoud van dat bericht naar deze dienst.</li>
+      <li><strong>Anthropic (Claude)</strong> — hiervoor gebruiken we deze AI-dienst voor vier dingen. Ten eerste het automatisch nakijken van uw open quiz-antwoorden: daarvoor gaan de betreffende vraag en uw antwoord erheen. Ten tweede het beoordelen van meldingen (§2): daarvoor gaat de gemelde tekst erheen — een spelersnaam, een teamnaam, een bericht of een antwoord — en de toelichting van de melder, maar niet wie er meldde. Ten derde, als we hulp vragen bij een antwoord op een reactie onder een bericht op Instagram of Facebook: dan gaat de tekst van die reactie en van ons bericht erheen, niet de naam van wie reageerde. Ten vierde, als we hulp vragen bij een reactie onder een openbaar bericht van een kroeg op Instagram: dan gaan de tekst van dat bericht en de naam van het zakelijke account erheen. In alle vier gevallen worden deze gegevens niet gebruikt om AI-modellen te trainen.</li>
+    </ul>
+    <p>Deze partijen kunnen gegevens buiten de EU verwerken; in dat geval steunen we op de passende waarborgen (zoals de standaardcontractbepalingen van de Europese Commissie).</p>
+    <p><strong>WhatsApp en Signal staan hier met opzet niet bij.</strong> Zij verwerken geen gegevens namens ons: staat er een groepschat-link bij uw kroeg, dan wisselt Klopt! daarover niets met hen uit. Pas wanneer u zelf op de link tikt, gaat u naar hun app en gelden hun eigen voorwaarden en privacybeleid.</p>
+    <p><strong>Meta Platforms Ireland</strong> (Instagram, Facebook) — daar halen we de reacties onder onze eigen berichten op, en lezen we openbare berichten over pubquizzen en van de accounts die we volgen (zie §2). Voor wat er op Instagram en Facebook zelf gebeurt, is Meta verantwoordelijk; zie hun eigen privacybeleid.</p>
+    <p>Van Apple en Google krijgen we alleen totalen uit hun winkels, zoals het aantal downloads per week. Van Google krijgen we ook totalen over hoe onze website in de zoekresultaten verschijnt, zoals zoektermen en het aantal klikken; die koppelen we niet aan personen. We sturen hun niets over u.</p>
+    <p>We kunnen gegevens daarnaast delen als dat wettelijk verplicht is.</p>
+    <h2>5. Hoe lang bewaren we gegevens?</h2>
+    <p>We bewaren uw gegevens zolang u een account hebt. Verwijdert u uw account, dan verwijderen we uw persoonsgegevens direct: uw account en spelersnaam, uw kroeglidmaatschap, uw antwoorden, uw scores, uw Klopt!-rating en badges, uw regel in de vastgelegde uitslagen van afgesloten quizzen, uw push-token, het logboek van meldingen die we u stuurden, uw reacties in de teamchat, uw blokkades, en uw herkomst en uw antwoord op de herkomstvraag. De <strong>tekst</strong> van uw chatberichten wissen we op hetzelfde moment; wat in het team achterblijft is een lege plek met “Bericht van een verwijderde speler”, zodat de draad eromheen leesbaar blijft. Alleen waar we wettelijk verplicht zijn iets langer te bewaren, doen we dat.</p>
+    <p>Voor <strong>wanneer u de app opent</strong> (§2) geldt een kortere termijn: die regels verdwijnen automatisch na <strong>90 dagen</strong>. Wat daarna overblijft is een telling per uur en per dag — hoeveel openingen er waren, zonder enige verwijzing naar een persoon. Verwijdert u uw account eerder, dan verdwijnen uw regels direct mee.</p>
+    <p>Ook <strong>foutmeldingen van de app</strong> (§2) verdwijnen automatisch na <strong>90 dagen</strong>. Verwijdert u uw account eerder, dan blijft een foutbericht tot die termijn bestaan, maar zonder verwijzing naar u.</p>
+    <p>Klikken op onze links (§2) verdwijnen automatisch na <strong>90 dagen</strong>; daarna blijft alleen een telling per dag over, zonder enige verwijzing naar een persoon. Uw herkomst en uw antwoord op de herkomstvraag bewaren we zolang u een account hebt; verwijdert u uw account, dan verdwijnen ze direct mee.</p>
+    <p>Voor <strong>berichten in de teamchat</strong> (§2) geldt eveneens <strong>90 dagen</strong>: daarna verdwijnen ze automatisch. Een bericht dat u zelf verwijderde, verliest zijn tekst al na zeven dagen. Wordt uw team opgeheven, dan verdwijnen alle berichten van dat team bij de eerstvolgende opruiming. Een bericht waarover nog een melding openstaat blijft staan tot daarover een besluit is genomen.</p>
+    <p>Reacties onder onze berichten op Instagram en Facebook, met ons antwoord: <strong>90 dagen</strong> na de reactie.</p>
+    <p>Openbare berichten die we bekeken en voorgestelde accounts (§2): <strong>30 dagen</strong>; een account dat we bewust oversloegen: <strong>één jaar</strong>; daarna alleen een telling per dag, zonder namen of links.</p>
+    <p>Uw groep per quiz en de momentopname na uw eerste quiz: zolang u een account hebt; verwijdert u uw account, dan verdwijnen ze direct mee, net als de kaartjes die we u aanboden. De telling van verwijderde accounts bevat niets wat naar een persoon terugleidt en bewaren we zonder termijn.</p>
+    <p>Berichten waarin u genoemd wordt, blijven op Instagram en Facebook staan tot wij ze weghalen; vraagt u erom, dan doen we dat. Uw keuze om genoemd te worden en uw Instagram-naam bewaren we zolang u een account hebt.</p>
+    <p>Voor <strong>teamgegevens</strong> geldt géén aparte termijn: uw lidmaatschap, uw inzet en de uitslagen van de rondes die u meespeelde blijven bewaard zolang u een account hebt, ook nadat u het team hebt verlaten. Verwijdert u uw account, dan verdwijnen uw naam en uw antwoorden; de vastgelegde teamuitslagen en punten blijven staan, met u erin als “oud-teamlid”. Zonder die regel zouden de uitslagen van uw teamgenoten achteraf veranderen.</p>
+    <p>Eén uitzondering op de zin hierboven: <strong>een melding blijft bestaan als u uw account verwijdert.</strong> Uw naam wordt er dan uit losgekoppeld — wij zien niet meer dat u de melder of de gemelde was — maar de momentopname van wat er gemeld werd blijft staan tot die melding de 90 dagen hieronder heeft bereikt. Zonder die regel zou het verwijderen van een account ook een melding over dat account laten verdwijnen.</p>
+    <p>Voor <strong>meldingen</strong> (§2) geldt ook een kortere termijn: een afgehandelde melding verdwijnt automatisch <strong>90 dagen</strong> na afhandeling, met de momentopname en de toelichting erin. Een melding die nog in behandeling is blijft staan tot er een besluit over genomen is.</p>
+    <p>Eén ding blijft bewust staan: een <strong>groepschat-link hoort bij de kroeg</strong>, niet bij u persoonlijk. Verwijdert u uw account terwijl de kroeg blijft bestaan, dan blijft de link die u erbij zette staan, totdat de nieuwe kastelein hem vervangt of weghaalt. Verdwijnt de kroeg omdat u het enige lid was, dan verdwijnt de link mee.</p>
+    <h2>6. Uw rechten</h2>
+    <p>Onder de AVG hebt u recht op:</p>
+    <ul>
+      <li><strong>inzage</strong> in uw gegevens;</li>
+      <li><strong>correctie</strong> van onjuiste gegevens;</li>
+      <li><strong>verwijdering</strong> (“recht op vergetelheid”);</li>
+      <li><strong>beperking</strong> van de verwerking;</li>
+      <li><strong>overdraagbaarheid</strong> van uw gegevens;</li>
+      <li><strong>bezwaar</strong> tegen verwerking;</li>
+      <li><strong>intrekken van toestemming</strong> (bijv. voor meldingen).</li>
+    </ul>
+    <p><strong>Verwijdering</strong> regelt u zelf in de app: <strong>Instellingen → Account verwijderen</strong>. Zie ook paragraaf 7 hieronder. Voor de overige rechten kunt u mailen naar Info@klopt-app.nl. U hebt ook het recht een klacht in te dienen bij de <strong>Autoriteit Persoonsgegevens</strong> (autoriteitpersoonsgegevens.nl).</p>
+    <h2>7. Account verwijderen</h2>
+    <p>U verwijdert uw account zelf in de app, via <strong>Instellingen → Account verwijderen</strong>. U hebt ons daar niet voor nodig en er komt geen wachttijd bij kijken: zodra u bevestigt, is het gebeurd.</p>
+    <p>Verwijderen is <strong>definitief</strong> en kan niet ongedaan gemaakt worden. Uw punten komen niet terug als u zich later opnieuw aanmeldt, en ze gaan ook niet over op iemand anders. Welke gegevens precies verdwijnen, leest u in paragraaf 5.</p>
+    <p>Bent u kastelein van een kroeg, dan blijft die kroeg gewoon bestaan voor de andere leden: het beheer gaat over op de stamgast die zich als eerste na u heeft aangesloten. Was u het enige lid, dan wordt de lege kroeg opgeheven.</p>
+    <p>Stond er een groepschat-link bij die kroeg, dan gaat die mee over op de nieuwe kastelein. Wilt u dat niet, haal de link dan zelf weg vóórdat u uw account verwijdert.</p>
+    <h2>8. Beveiliging</h2>
+    <p>We nemen passende technische en organisatorische maatregelen om uw gegevens te beschermen, waaronder versleutelde verbindingen en toegangscontrole op rijniveau in de database. Geen enkele dienst is 100% veilig, maar we doen er alles aan om risico’s te beperken.</p>
+    <h2>9. Kinderen</h2>
+    <p>Klopt! is niet bedoeld voor kinderen. De app kan verwijzingen naar een kroeg-context bevatten; gebruik is daarom bedoeld voor personen vanaf de leeftijdsgrens die in de App Store / Google Play voor de app wordt aangegeven.</p>
+    <h2>10. Wijzigingen</h2>
+    <p>We kunnen dit privacybeleid aanpassen. Bij belangrijke wijzigingen informeren we u via de app. De datum bovenaan geeft de laatste versie aan.</p>
+    <h2>11. Contact</h2>
+    <p>Vragen? Mail Info@klopt-app.nl.</p>
+  </main>
+</body>
+</html>
